@@ -1,6 +1,6 @@
 // Sort the data array using the greekSearchResults value
 data.sort(function(a, b) {
-  return parseFloat(b.bioSearchResults) - parseFloat(a.bioSearchResults);
+  return parseFloat(b.greekSearchResults) - parseFloat(a.greekSearchResults);
 });
 
 // Slice the first 10 objects for plotting
@@ -11,10 +11,10 @@ data = data.reverse();
 
 // Trace1 for the Greek Data
 var trace1 = {
-  x: data.map(row => row.bioSearchResults),
-  y: data.map(row => row.bioName),
-  text: data.map(row => row.bioName),
-  name: "Samples",
+  x: data.map(row => row.greekSearchResults),
+  y: data.map(row => row.greekName),
+  text: data.map(row => row.greekName),
+  name: "Greek",
   type: "bar",
   orientation: "h"
 };
@@ -24,7 +24,7 @@ var data = [trace1];
 
 // Apply the group bar mode to the layout
 var layout = {
-  title: "Biodiversity search results",
+  title: "Greek gods search results",
   margin: {
     l: 100,
     r: 100,
