@@ -1,0 +1,15 @@
+body {
+
+    color: #4ae40d;
+    background: rgb(30, 34, 56);
+    border-color: black;
+    font-family: 'Lucida Sans';
+    
+      }
+
+      .jumbotron {
+        background-image: url("../images/bio.png");
+        background-size: 100% 100%;
+        text-align: center;
+}
+  
